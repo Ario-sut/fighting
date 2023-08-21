@@ -302,7 +302,7 @@ def gameplay():
     kick = tkinter.Button(window, text="kick", command=kickp)
     grapple = tkinter.Button(window, text="grapple", command=grapplep)
     restart = tkinter.Button(window, text="restart", command=restart)
-    exit = tkinter.Button(window, text="exit", command=exit)
+    texit = tkinter.Button(window, text="exit", command=exit)
     enemymove = tkinter.Label(
         window, text="", font=("courier", 14), bg="Green", fg="White"
     )
@@ -313,7 +313,7 @@ def gameplay():
         window, text="", font=("Courier", 14, "bold"), bg="Green", fg="white"
     )
 
-    exit.pack(fill=tkinter.X, side=tkinter.BOTTOM)
+    texit.pack(fill=tkinter.X, side=tkinter.BOTTOM)
     player.pack(pady=10, padx=20, fill=tkinter.X)
     healthl.pack()
     punch.pack(pady=5)
